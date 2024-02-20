@@ -14,6 +14,8 @@ It will ask you to create .eslintrc & initiate files.
 
 > Run cmd : `npm i -D prettier eslint-config-prettier eslint-plugin-prettier`
 
+**"eslint-config-prettier", "eslint-plugin-prettier"** is for the preventing conflict
+
 And then, add the "plugin:prettier/recommended" to the .eslintrc's extends key as an array
 
 Also, add prettier config to the .eslintrc's rules key.
@@ -62,6 +64,23 @@ As it is stated in the official ESLint docs, you should declare your dependency 
 
 ```
 
+### Step 6. Add airbnb style
+
+Run cmd : `yarn add -D eslint-config-airbnb `
+
+And then, add the "airbnb" to the extends
+
+```
+module.exports = {
+  ...etc,
+  extends: ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
+  ...
+};
+
+```
+
 ---
 
-Reference : [how to create reusable eslint](https://dev.to/ramonak/how-to-create-custom-reusable-eslint-typescript-prettier-config-for-react-apps-5605)
+Reference :
+[how to create reusable eslint](https://dev.to/ramonak/how-to-create-custom-reusable-eslint-typescript-prettier-config-for-react-apps-5605)
+[Test npm locally](https://medium.com/@debshish.pal/publish-a-npm-package-locally-for-testing-9a00015eb9fd)

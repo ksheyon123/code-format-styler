@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "plugin:prettier/recommended"],
+  extends: [
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:prettier/recommended",
+  ],
   overrides: [
     {
       env: {
@@ -22,20 +26,6 @@ module.exports = {
   },
   plugins: ["@typescript-eslint", "react"],
   rules: {
-    "prettier/prettier": [
-      "error",
-      {
-        singleQuote: false,
-        semi: true,
-        useTabs: false,
-        tabWidth: 2,
-        trailingComma: "all",
-        printWidth: 80,
-        arrowParens: "always",
-        orderedImports: true,
-        bracketSpacing: true,
-        jsxBracketSameLine: false,
-      },
-    ],
+    "prettier/prettier": "error",
   },
 };
