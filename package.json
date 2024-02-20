@@ -1,6 +1,6 @@
 {
   "name": "code-format-styler",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "this library is for the formatting code",
   "main": "index.js",
   "scripts": {
